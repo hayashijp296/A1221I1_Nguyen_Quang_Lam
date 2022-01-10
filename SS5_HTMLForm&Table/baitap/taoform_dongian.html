@@ -3,30 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Tao form don gian</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            background-color: #7C99AC;
+        }
+    </style>
 </head>
 <body>
-    <form action="https://james.codegym.vn" method="get">
-        <h2>So thich cua ban</h2>
-        <p>Ho va ten<input type="text" name="yourname" size="35"></p>
-        <p>Email <input type="email" name="email" size="20"></p>
-         <h3>So thich</h3>
-        <input type="checkbox" name="hobby" value="thethao"> The Thao
-        <input type="checkbox" name="hobby" value="amnhac"> Am nhac
-        <input type="checkbox" name="hobby" value="docsach"> Doc sach <br>
-
-        <input type="checkbox" name="hobby" value="thethao"> The Thao
-        <input type="checkbox" name="hobby" value="amnhac"> Am nhac
-        <input type="checkbox" name="hobby" value="docsach"> Doc sach <br>
-
-        <input type="checkbox" name="hobby" value="thethao"> The Thao
-        <input type="checkbox" name="hobby" value="amnhac"> Am nhac
-        <input type="checkbox" name="hobby" value="docsach"> Doc sach <br>
-
-        <input type="submit" value="Submit">
-        <input type="reset">
-
-
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    <hr>
+    <h3>What is your age range</h3>
+    <select name="age" style="width: 20%">
+        <option value="18~24">18~24</option>
+        <option value="25~34">25~34</option>
+        <option value="35~50">35~50</option>
+        <option value="50+">50+</option>
+    </select>
+    <h3>What is your yearly income range</h3>
+    <select name="income" style="width: 30%">
+        <option value="$0 ~ $25000">$0 ~ $25000</option>
+        <option value="$25001 ~ $50000">$25001 ~ $50000</option>
+        <option value="$50001 ~ $75000">$50001 ~ $75000</option>
+        <option value="$75000+">$75000+</option>
+    </select>
+    <h3>Gender identity</h3>
+    <form action="">
+        <label><input type="radio" name="sex" value="male">Male</label><br>
+        <label><input type="radio" name="sex" value="Female">Female</label><br>
+        <label><input type="radio" name="sex" value="Nonbinary">Nonbinary</label><br>
+        <label><input type="radio" name="sex" value="Other">Other</label><br>
+        <input type="text">
+    </form>
+    <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h3>
+    <form action="">
+        <label><input type="checkbox" name="production1" value="production1">production1</label><br>
+        <label><input type="checkbox" name="production2" value="production2">production2</label><br>
+        <label><input type="checkbox" name="production3" value="production3">production3</label><br>
 
     </form>
+    <h3>How often would you use our new product?</h3>
+    <form action="">
+        <label><input type="radio" name="often" value="Daily">Daily</label><br>
+        <label><input type="radio" name="often" value="Weekly">Weekly</label><br>
+        <label><input type="radio" name="often" value="Monthly">Monthly</label><br>
+
+    </form>
+    <h3>What would you pay for the new product?</h3>
+    $ <label><input type="text"></label> . <label><input type="text"></label>
+    <h3>What features would you like to see in the new product.</h3>
+    <form action="">
+        <textarea name="" id="" cols="250" rows="10"></textarea>
+    </form>
+    <h4>Please rate your level of agreement with the following statements.</h4>
+    <table>
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td>Our products are priced fairly.</td>
+            <td>
+                <label><input type="radio" name="agree" value="agree1">1</label>
+            </td>
+            <td>
+                <label><input type="radio" name="agree" value="agree2">2</label>
+            </td>
+            <td>
+                <label><input type="radio" name="agree" value="agree2">3</label>
+            </td>
+            <td>
+                <label><input type="radio" name="agree" value="agree2">4</label>
+            </td>
+        </tr>
+    </table>
+
+
+
 </body>
 </html>

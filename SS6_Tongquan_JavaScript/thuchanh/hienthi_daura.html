@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị đầu ra</title>
+</head>
+<body>
+
+<!--    hiển thị bằng hàm alert()-->
+
+<button type="button" onclick="showMessage();">Click vào đây</button>
+
+<!--        hiển thị bằng thẻ html-->
+
+<button id="showMessage1" type="button" onclick="showMessage1()">Click vào đây</button>
+
+
+<!--        hiển thị bằng document.write()-->
+
+<button type="button" onclick="showMessage2()">Click vào đây</button>
+
+<!--            hiển thị bằng console.log()-->
+
+<button type="button" onclick="showMessage3()">Click vào đây</button>
+
+<script>
+    function showMessage() {
+        alert("Hello world!");
+    }
+
+    function showMessage1() {
+        document.getElementById("showMessage1").innerHTML = "Hello world";
+    }
+
+    function showMessage2() {
+        document.write("Hello world");
+    }
+    function showMessage3(){
+        console.log("Hello world");
+    }
+
+</script>
+</body>
+</html>

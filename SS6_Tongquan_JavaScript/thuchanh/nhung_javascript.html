@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhúng Javascript</title>
+
+<!--    Bài tập 3 : tách đoạn mã Javascript ở Bài tập 2 ra một file Javascript riêng và nhúng vào trang HTML-->
+    <script src="./demo.js"></script>
+</head>
+<body>
+
+<!--    Bài tập 1 : chen the javascript trong button-->
+
+<button type="button" onclick="alert('Xin chào!');">Click Me!</button>
+
+<!--    Bài tập 2 : sử dụng thẻ <script>-->
+
+<button type="button" onclick="showMessage();">Click Me!</button>
+
+<!--    Bài tập 3 : tách đoạn mã Javascript ở Bài tập 2 ra một file Javascript riêng và nhúng vào trang HTML-->
+<button type="button" onclick="showMessage1();">Click Me!</button>
+<script>
+    function showMessage(){
+        alert('Xin chào!');
+    }
+</script>
+</body>
+</html>
